@@ -1,0 +1,92 @@
+<app-banner [h1]="h1" [h2]="h2" [showMailboxSelector]="false"></app-banner>
+
+<div class="dtes-centered dtes-doc-api">
+
+  <h2>What is ooTech?</h2>
+  <p>
+    <div class="dtes-definition-of">
+  <!-- <p>According to <a href="https://www.merriam-webster.com/dictionary/dtes" target="_blank">Merriam-Webster</a>, the
+    definition of DTES is:</p> -->
+  <mat-card>
+    <mat-card-title>ooTech Community</mat-card-title>
+    <mat-card-content>
+      <span>"oo" is symbol of infinity</span>
+      <p>"ooTech" means Infinity Technologies Community</p>
+    </mat-card-content>
+  </mat-card>
+  <br>
+  <mat-card-content>
+    As defined above, our community's goal is to provide a science and technology playground. At the same time, striving to support the community in all technical aspects.
+  </mat-card-content>
+
+  <mat-divider></mat-divider>
+  <h2>Come on! Seriously, what is ooTech DTES - Disposable Temporary Email?</h2>
+  <mat-card-content>
+    ooTech DTES is a free Ad - Hoc Disposable Temporary Email Service.
+  <br>
+    <b>Ad-hoc</b> - a mailbox is created for your temporary email address as soon as you need it, just by sending it an email.<br>
+    <b>Disposable</b> - you can throw a disposable mailbox right away. No unsubscibing from a service, cancelling your account or anything of the sort. No strings attached.<br>
+    <b>Temporary</b> - Your mailbox is temporary. The emails received will be deleted by the system after a certain time elapses.<br>
+    <b>Free</b> - you know what that means!<br>
+    <br>
+    Others call it tempmail, 10minutemail, throwaway email, fake-mail or trash-mail.<br>
+    <br>
+    Disposable email services are online services that provide temporary email addresses for registering or signing up on websites that require email verification.<br>
+    One purpose of these services is to avoid exposing your own email address to potential SPAM, especially if you just need the service for a short period of time.<br>
+    Disposable email services are also useful in software development and testing, as many software products require email verification themselves. Using real email addresses in the context of software development or testing is cumbersome and annoying. Many teams around the world use temporary disposable email services for testing their own software products.<br>
+    ooTech DTES - Ad Hoc Email is one of these services. You can send an email to an @temp.ootech.vn address and check the ooTech DTES mailbox to retrieve and read the email.
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <!--<ng-adsense class="ng-adsense"-->
+              <!--[adClient]="'ca-pub-4119576279673540'"-->
+              <!--[adSlot]="1456083566"-->
+              <!--[display]="'block'"-->
+              <!--[adFormat]="'fluid'"-->
+              <!--[layoutKey]="'-fb+5w+4e-db+86'"-->
+              <!--[height]="300"-->
+  <!--&gt;-->
+  <!--</ng-adsense>-->
+  <mat-divider></mat-divider>
+  <h2>Can I only use @{{properties.allowedDomains[0]}} addresses with the service?</h2>
+  <mat-card-content>
+    The ooTech DTES server currently serves the domains:
+    <br>
+  <ul>
+    <li *ngFor="let domain of properties.allowedDomains">{{domain}}</li>
+  </ul>
+  <br>
+  Sending an email to any of the above domains will be accepted by the ooTech DTES mail service.
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <h2>How long does an email remain on the ooTech DTES mail server?</h2>
+  <mat-card-content>
+    An email remains on the ooTech DTES server at least {{ min(properties.emailDeleteInterval, properties.emailDeleteAge) |
+    amDuration: 'seconds' }}, and up to {{properties.emailDeleteAge + properties.emailDeleteInterval | amDuration:
+    'seconds' }}.
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <h2>Can I delete my emails immediately?</h2>
+  <mat-card-content>
+    Yes.
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <h2>What personal information do you save and how do you use it?</h2>
+  <mat-card-content>
+    We do not keep any direct personal information. However, the emails are publicly available, so be mindful of how you use
+    the service.
+    <br>
+    We do track accessing IP addresses in order to ensure the service's availability.
+    <br>
+    We recommend that you read the <a href="/privacy">privacy policy</a>.
+  </mat-card-content>
+  <!-- <mat-divider></mat-divider>
+  <h2>Why does <a href="https://mail.ootech.vn">DTES</a> use ads? Isn't it an open source project?</h2>
+  <mat-card-content>
+    <a href="https://www.temp.ootech.vn">DTES</a> is an open source project, and you can easily get the code on
+    <a href="https://github.com/o4oren/Ad-Hoc-Email-Server">Github</a>. However, making the service available for free
+    in the cloud has its costs.
+    <br>
+    Having advertisements on <a href="https://mail.ootech.vn">DTES</a> helps me keep the service free and available.
+  </mat-card-content> -->
+
+</div>

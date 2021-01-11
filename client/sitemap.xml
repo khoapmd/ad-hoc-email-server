@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://mail.ootech.vn/</loc>
+    <lastmod>2018-12-09</lastmod>
+    <image:image>
+      <image:loc>https://mail.ootech.vn/assets/svg/dtes-bluish.svg</image:loc>
+      <image:caption>ooTech DTES - an ad-hoc email logo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mail.ootech.vn/assets/svg/ootech-dtes-logo-text.svg</image:loc>
+      <image:caption>ooTech DTES - an ad-hoc email logo text</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mail.ootech.vn/assets/svg/dtes-logo-text.svg</image:loc>
+      <image:caption>ooTech DTES - an ad-hoc email logo text</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://mail.ootech.vn/assets/svg/dtes-sm-bottom-text.svg</image:loc>
+      <image:caption>ooTech DTES - an ad-hoc email</image:caption>
+    </image:image>
+  </url>
+  <url>
+  	<loc>https://mail.ootech.vn/privacy</loc>
+    <lastmod>2019-03-02</lastmod>
+  </url>
+  <url>
+	  <loc>https://mail.ootech.vn/help/api</loc>
+    <lastmod>2019-03-02</lastmod>
+  </url>
+  <url>
+	  <loc>https://mail.ootech.vn/api-doc</loc>
+    <lastmod>2019-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://mail.ootech.vn/help/faq</loc>
+    <lastmod>2020-02-02</lastmod>
+  </url>
+  <url>
+    <loc>https://mail.ootech.vn/help/about</loc>
+    <lastmod>2019-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://mail.ootech.vn/blog</loc>
+    <lastmod>2020-02-02</lastmod>
+  </url>
+  <url>
+    <loc>https://mail.ootech.vn/blog/post/how-to-set-up-your-own-disposable-email-server</loc>
+    <lastmod>2020-02-02</lastmod>
+  </url>
+  <url>
+    <loc>https://mail.ootech.vn/blog/post/run-dtes-on-docker</loc>
+    <lastmod>2019-03-02</lastmod>
+  </url>
+  <url>
+    <loc>https://mail.ootech.vn/mailbox</loc>
+  </url>
+</urlset>

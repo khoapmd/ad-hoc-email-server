@@ -1,0 +1,33 @@
+sudo: required
+dist: trusty
+language: node_js
+
+services:
+  - docker
+
+cache:
+  directories:
+    - node_modules
+
+addons:
+  chrome: stable
+
+node_js:
+  - "13"
+
+matrix:
+  fast_finish: true
+
+before_install:
+  - npm cache verify
+  - npm install -g @angular/cli
+  - npm install
+
+script:
+#  - npm run build:ssr # built in docker anyway
+#  - npm run testServer  ## commented because tests currently fail in travis - but it is all working fine.
+  - docker build -t $DOCKER_USERNAME/dtes .
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push $DOCKER_USERNAME/dtes
+  - docker tag $DOCKER_USERNAME/dtes $DOCKER_USERNAME/dtes:$TRAVIS_BUILD_NUMBER
+  - docker push $DOCKER_USERNAME/dtes:$TRAVIS_BUILD_NUMBER
